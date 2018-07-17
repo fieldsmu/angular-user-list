@@ -1,0 +1,9 @@
+<div>
+  <table *ngIf='user' class='table'>
+    <tr><th>Id</th><td>{{user.Id}}</td></tr>
+    <tr><th>Firstname</th><td>{{user.Firstname}}</td></tr>
+    <tr><th>Lastname</th><td>{{user.Lastname}}</td></tr>
+    <tr><th>Username</th><td>{{user.Username}}</td></tr>
+  </table>
+  <h1 *ngIf='!user'>User Data Not Available Yet. Please wait...</h1>
+</div>
